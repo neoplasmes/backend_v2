@@ -45,7 +45,7 @@ create table chapters_progress(
 
 /*
 *	
-*	Триггер, автоматически оновленющий поле progress в courses_progress
+*	Триггер, автоматически обновляющий поле progress в courses_progress
 *	courses_progress[user_id][course_id].progress = 
 *		  |			(chapter_progress1[user_id][course_id] + chapter_progress2 + ... chapter_progressN) / (N = courses[course_id].chapters_amount);
 *		  -- course_id ------------------------>
